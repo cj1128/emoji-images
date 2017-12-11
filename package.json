@@ -1,13 +1,12 @@
 {
   "name": "emojiimages",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "main": "index.js",
   "author": "CJ Ting <fatelovely1128@gmail.com>",
   "license": "MIT",
   "scripts": {
     "test": "node test.js",
-    "prepublish": "yarn run test",
-    "publish": ""
+    "prepublish": "yarn run test"
   },
   "devDependencies": {
     "emojilib": "2.2.9"
