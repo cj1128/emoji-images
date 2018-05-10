@@ -1,8 +1,6 @@
 # 🙈 Emoji Images
 
-Emoji images library.
-
-this library has images for all emojis found in [emojilib](https://github.com/muan/emojilib) excepts which doesn't have `char` property.
+this library has png images(96 x 96) for all emojis found in [emojilib](https://github.com/muan/emojilib) excepts which doesn't have `char` property.
 
 ## Install
 
@@ -18,7 +16,7 @@ yarn add emojiimages
 
 ## Usage
 
-pass emoji character to `getImage` and you are done.
+pass emoji character to `getImage` and find the file in `imgs` directory.
 
 ```javascript
 > var emojiimages = require("emojiimages")
