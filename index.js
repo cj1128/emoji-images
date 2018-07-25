@@ -1,24 +1,14 @@
-var fs = require("fs")
-var path = require("path")
-var punycode = require("punycode")
+const fs = require("fs")
+const path = require("path")
+const punycode = require("punycode")
 
-function getImage(char) {
-  var code = charToCode(char)
-  var imgid = codeToImageID(code)
-  var imgPath = path.join(__dirname, "imgs", imgid + ".png")
-  if(fs.existsSync(imgPath)) {
-    return imgid + ".png"
-  }
-  return null
-}
-
-function charToCode(char) {
+const charToCode = char => {
   var points = punycode.ucs2.decode(char)
   return points.map(p => p.toString(16).padStart(4, "0")).join("-")
 }
 
-function codeToImageID(code) {
-  // edge cases
+const codeToImg = code => {
+  // handle edge cases
   switch(code) {
     case "1f937":
       return "1f937-2640"
@@ -27,12 +17,17 @@ function codeToImageID(code) {
     case "1f5e8":
       return "1f441-1f5e8"
   }
-  var imgid = code
-  imgid = imgid.replace(/200d-/g, "")
-  imgid = imgid.replace(/-fe0f/g, "")
-  return imgid
+  return code
+    .replace(/200d-/g, "")
+    .replace(/-fe0f/g, "")
 }
 
-module.exports = {
-  getImage,
+const charToImg = char => codeToImg(charToCode(char)) + ".png"
+
+exports.getImage = char => {
+  const img = charToImg(char)
+  if(fs.existsSync(path.join(__dirname, "imgs", img))) {
+    return img
+  }
+  return null
 }
