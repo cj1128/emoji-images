@@ -38,7 +38,7 @@ const filepath = `node_modules/emojiimages/imgs/${filename}`
 
 All the images are rendered by the browser. If you want emoji images in different size, follow these steps:
 
-- Clone this repo 🚀
+- Clone this repo and install dependencies 🚀
 - Start a local server and open `generator.html` 🖱
 - Adjust the params ⚙
 - Click `Download` to download a preview image 🤓
