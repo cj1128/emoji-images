@@ -29,7 +29,15 @@
         </div>
 
         <div>
-          Total Emojis: <span class="text-base text-gray-800" id="totalEmojis"></span>
+          Emoji Sequences Count: <span class="text-base text-gray-800" id="sequencesCount"></span>
+        </div>
+
+        <div>
+          Supplement Emojis Count: <span class="text-base text-gray-800" id="supplementCount"></span>
+        </div>
+
+        <div>
+          Total Emojis Count: <span class="text-base text-gray-800" id="totalCount"></span>
         </div>
       </div>
 
@@ -68,13 +76,15 @@
     </div>
   </main>
 
-  <canvas id="offscreen"></canvas>
+  <canvas id="offscreen" class="hidden"></canvas>
 
   <script type="text/javascript">
     const $ = document.querySelector.bind(document)
     const $$ = document.querySelectorAll.bind(document)
 
     let demoEmoji = "🤒"
+    // let demoEmoji = "👩‍🍳"
+    // let demoEmoji = "👩‍✈️"
 
     $$("form input").forEach(ele => {
       ele.addEventListener("change", () => {
@@ -112,24 +122,29 @@
       link.click()
     }
 
-    const parseEmojiSequences = (content) => {
+    // get emojis from emoji-sequences.txt and supplement.txt
+    const getEmojis = async () => {
       const result = {
         emojis: [],
-        date: "",
-        version: "",
+        sequencesDate: "",
+        sequencesVersion: "",
+        sequencesCount: 0,
+        supplementCount: 0,
       }
 
-      content.split("\n")
+      const sequencesContent = await fetch("emoji-sequences.txt").then(res => res.text())
+
+      sequencesContent.split("\n")
         .filter(line => {
           const datePrefix = "# Date: "
           if(line.startsWith(datePrefix)) {
-            result.date = line.slice(datePrefix.length).split(", ")[0]
+            result.sequencesDate = line.slice(datePrefix.length).split(", ")[0]
           }
 
           const versionPrefix = "# Version: "
 
           if(line.startsWith(versionPrefix)) {
-            result.version = line.slice(versionPrefix.length)
+            result.sequencesVersion = line.slice(versionPrefix.length)
           }
 
           return !line.startsWith("#")
@@ -142,18 +157,29 @@
             const leftNum = parseInt(left, "16")
             const rightNum = parseInt(right, "16")
             for(let i = leftNum; i <= rightNum; i++) {
+              result.sequencesCount++
               result.emojis.push([i])
             }
           } else if(points.includes(" ")) {
+            result.sequencesCount++
             result.emojis.push(points.split(" ").map(str => parseInt(str, "16")))
           } else {
+            result.sequencesCount++
             result.emojis.push([parseInt(points, "16")])
           }
         })
 
-      if(result.date === "" || result.version === "") {
+      if(result.sequencesDate === "" || result.sequencesVersion === "") {
         throw new Error("could not parse date and version of emoji sequences")
       }
+
+      const supplementContent = await fetch("supplement.txt").then(res => res.text())
+      supplementContent.split("\n")
+        .filter(line => line.trim() !== "")
+        .forEach(line => {
+          result.supplementCount++
+          result.emojis.push(line.split(";")[0].trim().split(" ").map(s => parseInt(s, "16")))
+        })
 
       return result
     }
@@ -166,6 +192,7 @@
 
     const drawPoints = (zip, canvas, points) => {
       const filename = points.map(num => num.toString(16)).join("-") + ".png"
+      drawEmoji(String.fromCodePoint(...points), canvas)
 
       return new Promise((resolve, reject) => {
         canvas.toBlob(blob => {
@@ -178,19 +205,18 @@
     const init = () => {
       drawEmoji()
 
-      fetch("emoji-sequences.txt")
-        .then(res => res.text())
-        .then(txt => {
-          const parsed = parseEmojiSequences(txt)
-
-          $("#sequencesVersion").innerText = parsed.version
-          $("#sequencesDate").innerText = parsed.date
-          $("#totalEmojis").innerText = parsed.emojis.length
+      getEmojis()
+        .then(result => {
+          $("#sequencesVersion").innerText = result.sequencesVersion
+          $("#sequencesDate").innerText = result.sequencesDate
+          $("#sequencesCount").innerText = result.sequencesCount
+          $("#supplementCount").innerText = result.supplementCount
+          $("#totalCount").innerText = result.sequencesCount + result.supplementCount
 
           $("#shuffle").addEventListener("click", () => {
-            const randomIndex = Math.floor(Math.random() * parsed.emojis.length)
-            window.demoCodePoints = parsed.emojis[randomIndex]
-            demoEmoji = String.fromCodePoint(...parsed.emojis[randomIndex])
+            const randomIndex = Math.floor(Math.random() * result.emojis.length)
+            demoEmoji = String.fromCodePoint(...result.emojis[randomIndex])
+            console.log("emoji", result.emojis[randomIndex], demoEmoji)
             drawEmoji()
           })
 
@@ -201,14 +227,14 @@
 
             NProgress.start()
 
-            await Promise.all(parsed.emojis.slice(0, 5).map(points => drawPoints(root, canvas, points).then(() => NProgress.inc())))
+            await Promise.all(result.emojis.map(points => drawPoints(root, canvas, points).then(() => NProgress.inc())))
 
             console.log("All drawn")
 
             zip.generateAsync({type:"blob"})
               .then(blob => {
                 NProgress.done()
-                saveAs(blob, `emojis_${parsed.version}_${parsed.date}.zip`)
+                saveAs(blob, `emojis_${result.sequencesVersion}_${result.sequencesDate}.zip`)
               })
           })
         })

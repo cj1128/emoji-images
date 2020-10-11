@@ -2,9 +2,13 @@
 
 [![npm version](https://badge.fury.io/js/emojiimages.svg)](https://badge.fury.io/js/emojiimages)
 
-Images (200x200) for all emojis in [Unicode v13.1](https://unicode.org/Public/emoji/13.1/emoji-sequences.txt) (Date 2020-08-31), rendered in *Apple Color Emoji* font.
+Images (200x200) for all emojis in [Unicode v13.1](https://unicode.org/Public/emoji/13.1/emoji-sequences.txt) (Date 2020-08-31) and some composite emojis in [supplement.txt](./supplement.txt) such as `👨‍👩‍👧‍👦`, rendered with *Apple Color Emoji* font in Mac OS.
 
-The unicode standard contains 2192 emojis, but few of them are not supported by the Apple Color Emoji font, so this library contains **2127** emoji images in total.
+NOTE: Some emojis are not supported by the Apple Color Emoji font.
+
+- Unicode v13.1 contains 2192 emojis, 2127 are supported.
+- `supplement.txt` contains 125 emojis, 124 are suppoted.
+- So we get 2127 + 124 = **2251** emoji images in total!
 
 ![](http://asset.cjting.cn/Fl94d35lOHoRctklj0MW8P5SRMhO.png)
 

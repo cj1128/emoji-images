@@ -1,0 +1,125 @@
+1f468 200d 1f3a8                           ; man_artist                    ; 👨‍🎨
+1f9dc 200d 2640 fe0f                       ; mermaid                       ; 🧜‍♀️
+1f926 200d 2640 fe0f                       ; woman_facepalming             ; 🤦‍♀️
+1f64e 200d 2642 fe0f                       ; pouting_man                   ; 🙎‍♂️
+1f468 200d 1f469 200d 1f467 200d 1f466     ; family_man_woman_girl_boy     ; 👨‍👩‍👧‍👦
+1f469 200d 1f469 200d 1f466                ; family_woman_woman_boy        ; 👩‍👩‍👦
+1f46e 200d 2640 fe0f                       ; policewoman                   ; 👮‍♀️
+1f468 200d 2695 fe0f                       ; man_health_worker             ; 👨‍⚕️
+1f469 200d 1f52c                           ; woman_scientist               ; 👩‍🔬
+1f469 200d 1f467                           ; family_woman_girl             ; 👩‍👧
+1f9dd 200d 2640 fe0f                       ; woman_elf                     ; 🧝‍♀️
+1f468 200d 2764 fe0f 200d 1f468            ; couple_with_heart_man_man     ; 👨‍❤️‍👨
+1f9db 200d 2640 fe0f                       ; woman_vampire                 ; 🧛‍♀️
+1f469 200d 1f692                           ; woman_firefighter             ; 👩‍🚒
+1f469 200d 2695 fe0f                       ; woman_health_worker           ; 👩‍⚕️
+1f468 200d 1f467 200d 1f466                ; family_man_girl_boy           ; 👨‍👧‍👦
+1f471 200d 2640 fe0f                       ; blonde_woman                  ; 👱‍♀️
+1f469 200d 1f469 200d 1f466 200d 1f466     ; family_woman_woman_boy_boy    ; 👩‍👩‍👦‍👦
+1f9d9 200d 2640 fe0f                       ; sorceress                     ; 🧙‍♀️
+1f3cc fe0f 200d 2640 fe0f                  ; golfing_woman                 ; 🏌️‍♀️
+1f469 200d 1f466 200d 1f466                ; family_woman_boy_boy          ; 👩‍👦‍👦
+1f468 200d 1f3a4                           ; man_singer                    ; 👨‍🎤
+1f93e 200d 2642 fe0f                       ; man_playing_handball          ; 🤾‍♂️
+1f9de 200d 2640 fe0f                       ; woman_genie                   ; 🧞‍♀️
+1f469 200d 1f393                           ; woman_student                 ; 👩‍🎓
+1f469 200d 1f467 200d 1f467                ; family_woman_girl_girl        ; 👩‍👧‍👧
+1f46f 200d 2642 fe0f                       ; dancing_men                   ; 👯‍♂️
+1f9d6 200d 2640 fe0f                       ; woman_in_steamy_room          ; 🧖‍♀️
+1f486 200d 2642 fe0f                       ; massage_man                   ; 💆‍♂️
+1f468 200d 1f33e                           ; man_farmer                    ; 👨‍🌾
+1f9b9 200d 2642 fe0f                       ; man_supervillain              ; 🦹‍♂️
+1f6a3 200d 2640 fe0f                       ; rowing_woman                  ; 🚣‍♀️
+1f9db 200d 2642 fe0f                       ; man_vampire                   ; 🧛‍♂️
+1f9df 200d 2640 fe0f                       ; woman_zombie                  ; 🧟‍♀️
+1f9de 200d 2642 fe0f                       ; man_genie                     ; 🧞‍♂️
+1f469 200d 2764 fe0f 200d 1f469            ; couple_with_heart_woman_woman ; 👩‍❤️‍👩
+1f469 200d 1f469 200d 1f467                ; family_woman_woman_girl       ; 👩‍👩‍👧
+1f469 200d 1f373                           ; woman_cook                    ; 👩‍🍳
+1f9b8 200d 2642 fe0f                       ; man_superhero                 ; 🦸‍♂️
+1f487 200d 2642 fe0f                       ; haircut_man                   ; 💇‍♂️
+1f469 200d 2696 fe0f                       ; woman_judge                   ; 👩‍⚖️
+1f468 200d 1f469 200d 1f466 200d 1f466     ; family_man_woman_boy_boy      ; 👨‍👩‍👦‍👦
+1f9da 200d 2640 fe0f                       ; woman_fairy                   ; 🧚‍♀️
+1f468 200d 1f466                           ; family_man_boy                ; 👨‍👦
+1f9d7 200d 2642 fe0f                       ; climbing_man                  ; 🧗‍♂️
+1f93c 200d 2640 fe0f                       ; women_wrestling               ; 🤼‍♀️
+1f468 200d 1f373                           ; man_cook                      ; 👨‍🍳
+1f468 200d 1f692                           ; man_firefighter               ; 👨‍🚒
+26f9 fe0f 200d 2640 fe0f                   ; basketball_woman              ; ⛹️‍♀️
+1f469 200d 1f3a8                           ; woman_artist                  ; 👩‍🎨
+1f939 200d 2642 fe0f                       ; man_juggling                  ; 🤹‍♂️
+1f469 200d 2708 fe0f                       ; woman_pilot                   ; 👩‍✈️
+1f3cb fe0f 200d 2640 fe0f                  ; weight_lifting_woman          ; 🏋️‍♀️
+1f9d7 200d 2640 fe0f                       ; climbing_woman                ; 🧗‍♀️
+1f468 200d 2708 fe0f                       ; man_pilot                     ; 👨‍✈️
+1f93e 200d 2640 fe0f                       ; woman_playing_handball        ; 🤾‍♀️
+1f645 200d 2642 fe0f                       ; no_good_man                   ; 🙅‍♂️
+1f468 200d 2764 fe0f 200d 1f48b 200d 1f468 ; couplekiss_man_man            ; 👨‍❤️‍💋‍👨
+1f9b8 200d 2640 fe0f                       ; woman_superhero               ; 🦸‍♀️
+1f468 200d 1f468 200d 1f466 200d 1f466     ; family_man_man_boy_boy        ; 👨‍👨‍👦‍👦
+1f9d9 200d 2642 fe0f                       ; wizard                        ; 🧙‍♂️
+1f468 200d 1f4bc                           ; man_office_worker             ; 👨‍💼
+1f468 200d 1f4bb                           ; man_technologist              ; 👨‍💻
+1f477 200d 2640 fe0f                       ; construction_worker_woman     ; 👷‍♀️
+1f9df 200d 2642 fe0f                       ; man_zombie                    ; 🧟‍♂️
+1f6b5 200d 2640 fe0f                       ; mountain_biking_woman         ; 🚵‍♀️
+1f575 fe0f 200d 2640 fe0f                  ; female_detective              ; 🕵️‍♀️
+1f469 200d 1f4bc                           ; woman_office_worker           ; 👩‍💼
+1f468 200d 1f467                           ; family_man_girl               ; 👨‍👧
+1f9d8 200d 2640 fe0f                       ; woman_in_lotus_position       ; 🧘‍♀️
+1f468 200d 1f466 200d 1f466                ; family_man_boy_boy            ; 👨‍👦‍👦
+1f646 200d 2642 fe0f                       ; ok_man                        ; 🙆‍♂️
+1f481 200d 2642 fe0f                       ; tipping_hand_man              ; 💁‍♂️
+1f938 200d 2642 fe0f                       ; man_cartwheeling              ; 🤸‍♂️
+1f9dd 200d 2642 fe0f                       ; man_elf                       ; 🧝‍♂️
+1f3c3 200d 2640 fe0f                       ; running_woman                 ; 🏃‍♀️
+1f3ca 200d 2640 fe0f                       ; swimming_woman                ; 🏊‍♀️
+1f469 200d 1f527                           ; woman_mechanic                ; 👩‍🔧
+1f469 200d 1f466                           ; family_woman_boy              ; 👩‍👦
+1f6b4 200d 2640 fe0f                       ; biking_woman                  ; 🚴‍♀️
+1f468 200d 1f469 200d 1f467 200d 1f467     ; family_man_woman_girl_girl    ; 👨‍👩‍👧‍👧
+1f468 200d 1f468 200d 1f467 200d 1f466     ; family_man_man_girl_boy       ; 👨‍👨‍👧‍👦
+1f926 200d 2642 fe0f                       ; man_facepalming               ; 🤦‍♂️
+1f9da 200d 2642 fe0f                       ; man_fairy                     ; 🧚‍♂️
+1f647 200d 2640 fe0f                       ; bowing_woman                  ; 🙇‍♀️
+1f482 200d 2640 fe0f                       ; guardswoman                   ; 💂‍♀️
+1f468 200d 1f3eb                           ; man_teacher                   ; 👨‍🏫
+1f469 200d 1f469 200d 1f467 200d 1f466     ; family_woman_woman_girl_boy   ; 👩‍👩‍👧‍👦
+1f468 200d 2696 fe0f                       ; man_judge                     ; 👨‍⚖️
+1f937 200d 2642 fe0f                       ; man_shrugging                 ; 🤷‍♂️
+1f469 200d 1f467 200d 1f466                ; family_woman_girl_boy         ; 👩‍👧‍👦
+1f938 200d 2640 fe0f                       ; woman_cartwheeling            ; 🤸‍♀️
+1f469 200d 1f469 200d 1f467 200d 1f467     ; family_woman_woman_girl_girl  ; 👩‍👩‍👧‍👧
+1f468 200d 1f468 200d 1f467 200d 1f467     ; family_man_man_girl_girl      ; 👨‍👨‍👧‍👧
+1f3f4 200d 2620 fe0f                       ; pirate_flag                   ; 🏴‍☠️
+1f473 200d 2640 fe0f                       ; woman_with_turban             ; 👳‍♀️
+1f468 200d 1f527                           ; man_mechanic                  ; 👨‍🔧
+1f9d6 200d 2642 fe0f                       ; man_in_steamy_room            ; 🧖‍♂️
+1f939 200d 2640 fe0f                       ; woman_juggling                ; 🤹‍♀️
+1f64d 200d 2642 fe0f                       ; frowning_man                  ; 🙍‍♂️
+1f468 200d 1f468 200d 1f466                ; family_man_man_boy            ; 👨‍👨‍👦
+1f469 200d 1f680                           ; woman_astronaut               ; 👩‍🚀
+1f468 200d 1f680                           ; man_astronaut                 ; 👨‍🚀
+1f9dc 200d 2642 fe0f                       ; merman                        ; 🧜‍♂️
+1f3f3 fe0f 200d 1f308                      ; rainbow_flag                  ; 🏳️‍🌈
+1f469 200d 1f4bb                           ; woman_technologist            ; 👩‍💻
+1f468 200d 1f468 200d 1f467                ; family_man_man_girl           ; 👨‍👨‍👧
+1f468 200d 1f393                           ; man_student                   ; 👨‍🎓
+1f468 200d 1f469 200d 1f467                ; family_man_woman_girl         ; 👨‍👩‍👧
+1f93d 200d 2640 fe0f                       ; woman_playing_water_polo      ; 🤽‍♀️
+1f469 200d 1f3a4                           ; woman_singer                  ; 👩‍🎤
+1f93c 200d 2642 fe0f                       ; men_wrestling                 ; 🤼‍♂️
+1f93d 200d 2642 fe0f                       ; man_playing_water_polo        ; 🤽‍♂️
+1f9b9 200d 2640 fe0f                       ; woman_supervillain            ; 🦹‍♀️
+1f64b 200d 2642 fe0f                       ; raising_hand_man              ; 🙋‍♂️
+1f468 200d 1f3ed                           ; man_factory_worker            ; 👨‍🏭
+1f469 200d 1f3ed                           ; woman_factory_worker          ; 👩‍🏭
+1f6b6 200d 2640 fe0f                       ; walking_woman                 ; 🚶‍♀️
+1f9d8 200d 2642 fe0f                       ; man_in_lotus_position         ; 🧘‍♂️
+1f468 200d 1f52c                           ; man_scientist                 ; 👨‍🔬
+1f469 200d 1f3eb                           ; woman_teacher                 ; 👩‍🏫
+1f468 200d 1f467 200d 1f467                ; family_man_girl_girl          ; 👨‍👧‍👧
+1f469 200d 2764 fe0f 200d 1f48b 200d 1f469 ; couplekiss_woman_woman        ; 👩‍❤️‍💋‍👩
+1f3c4 200d 2640 fe0f                       ; surfing_woman                 ; 🏄‍♀️
+1f469 200d 1f33e                           ; woman_farmer                  ; 👩‍🌾
