@@ -11,7 +11,7 @@
   "devDependencies": {
     "imagemin": "7.0.1",
     "imagemin-pngquant": "9.0.1",
-    "jszip": "3.5.0",
+    "jszip": "3.7.0",
     "nprogress": "0.2.0"
   }
 }
