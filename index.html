@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="data:;base64,=" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,user-scalable=no"
+    />
+    <script
+      type="text/javascript"
+      src="node_modules/nprogress/nprogress.js"
+    ></script>
+    <title>Emoji Images Generator</title>
+  </head>
+
+  <body class="flex flex-col">
+    <h1 class="text-4xl text-gray-800 font-bold text-center my-16">
+      Emoji Images Generator
+    </h1>
+
+    <main class="mx-auto p-4 flex border-2 border-gray-200 self-start rounded-md">
+      <canvas
+        id="demo"
+        class="self-center flex-shrink-0 border-2 border-gray-100 shadow-lg mr-12"
+      ></canvas>
+
+      <div class="flex-1">
+        <div class="text-gray-600 text-sm">
+          <div>
+            Emoji Sequences Version:
+            <span class="text-base text-gray-800" id="sequencesVersion"></span>
+          </div>
+
+          <div>
+            Emoji Sequences Date:
+            <span class="text-base text-gray-800" id="sequencesDate"></span>
+          </div>
+
+          <div>
+            Emoji Sequences Count:
+            <span class="text-base text-gray-800" id="sequencesCount"></span>
+          </div>
+
+          <div>
+            Supplement Emojis Count:
+            <span class="text-base text-gray-800" id="supplementCount"></span>
+          </div>
+
+          <div>
+            Total Emojis Count:
+            <span class="text-base text-gray-800" id="totalCount"></span>
+          </div>
+        </div>
+
+        <div class="flex">
+          <form class="mt-2 mr-8">
+            <div class="flex items-center py-1">
+              <span class="w-32">Y Offset</span>
+              <input
+                class="ml-4 focus:outline-none text-gray-800 border-b-2 border-gray-400"
+                type="number"
+                id="yOffset"
+                value="-10"
+              />
+            </div>
+
+            <div class="flex items-center py-1">
+              <span class="w-32">Canvas Size</span>
+              <input
+                class="ml-4 focus:outline-none text-gray-800 border-b-2 border-gray-400"
+                type="number"
+                id="canvasSize"
+                value="200"
+              />
+            </div>
+
+            <div class="flex items-center py-1">
+              <span class="w-32">Font Size</span>
+              <input
+                class="ml-4 focus:outline-none text-gray-800 border-b-2 border-gray-400"
+                type="number"
+                id="fontSize"
+                value="160"
+              />
+            </div>
+          </form>
+
+          <div class="ml-auto flex flex-col">
+            <button
+              class="block hover:bg-blue-700 focus:outline-none bg-blue-500 text-white rounded px-2 py-1 text-sm my-2"
+              id="shuffle"
+            >
+              Shuffle
+            </button>
+
+            <button
+              class="block hover:bg-purple-700 focus:outline-none bg-purple-500 text-white rounded px-2 py-1 text-sm my-2"
+              id="download"
+            >
+              Download
+            </button>
+
+            <button
+              class="block hover:bg-indigo-700 focus:outline-none bg-indigo-500 text-white rounded px-2 py-1 text-sm my-2"
+              id="downloadAll"
+            >
+              Download All
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <canvas id="offscreen" class="hidden"></canvas>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

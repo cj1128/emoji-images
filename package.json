@@ -1,17 +1,24 @@
 {
   "name": "emojiimages",
   "version": "1.2.1",
-  "keywords": ["emoji"],
+  "keywords": [
+    "emoji"
+  ],
   "homepage": "https://github.com/cj1128/emoji-images",
-  "author": "CJ Ting<cjting1128@gmail.com>",
+  "author": "CJ Ting <cjting1128@gmail.com>",
+  "scripts": {
+    "dev": "vite"
+  },
   "license": "MIT",
   "files": [
     "imgs"
   ],
   "devDependencies": {
-    "imagemin": "7.0.1",
-    "imagemin-pngquant": "9.0.1",
-    "jszip": "3.5.0",
-    "nprogress": "0.2.0"
+    "imagemin": "8.0.1",
+    "imagemin-pngquant": "9.0.2",
+    "jszip": "3.7.1",
+    "nprogress": "0.2.0",
+    "vite": "2.8.4",
+    "vite-plugin-windicss": "1.8.1"
   }
 }
